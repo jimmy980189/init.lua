@@ -1,0 +1,30 @@
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdcommenter'
+Plug 'vim-airline/vim-airline'
+Plug 'ThePrimeagen/vim-be-good'
+Plug 'ayu-theme/ayu-vim' 
+Plug 'rust-lang/rust.vim'
+Plug 'scrooloose/syntastic'
+call plug#end()
+
+syntax enable
+filetype plugin indent on
+
+set rnu nu
+set incsearch
+set termguicolors     " enable true colors support
+"let ayucolor="light"  " for light version of theme
+"let ayucolor="mirage" " for mirage version of theme
+"let ayucolor="dark"   " for dark version of theme
+"colorscheme ayu
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_rust_checkers = ['rustc']
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_loc_list_height=5
+let g:syntastic_auto_jump=0
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
