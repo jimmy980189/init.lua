@@ -1,3 +1,3 @@
 # esfpi's init.lua
 
-The configurations are mainly followed by [ThePrimeagen](https://github.com/ThePrimeagen/init.lua/tree/master).
+The configs are based on ThePrimeagen's [init.lua](https://github.com/ThePrimeagen/init.lua).

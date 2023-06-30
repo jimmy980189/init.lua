@@ -13,9 +13,13 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    --colorscheme
+    use ('ayu-theme/ayu-vim')
+    use({ 'rose-pine/neovim', as = 'rose-pine' })
+
     --mine
     use ('preservim/nerdcommenter')
-    use ('ayu-theme/ayu-vim')
+    use ('norcalli/nvim-colorizer.lua')
 
     --ThePrimeagen
     use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
